@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Básico</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Digite o seu nome" required>
+        </div>
+        <div>
+            <label for="sobrenome">  Sobrenome:</label>
+            <input type="text" id="sobrenome" placeholder="Digite o seu sobrenome" required>
+        </div>
+        <div>
+            <label for="idade">Idade:</label>
+            <input type="text" id="idade" placeholder="Digite o sua idade" required>
+        </div>
+        <div>
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" placeholder="Digite o seu número de telefone" required>
+        </div>
+        <!-- input radio -->
+        <div>
+            <p>Você aceita JESUS? </p>
+
+            <div>
+                <input type="radio" id="sim" name="aceita-jesus" required>
+                <label for="sim">Sim</label>
+            </div>
+            <div>
+                <input type="radio" id="nao" name="aceita-jesus" >
+                <label for="nao">Não</label>
+            </div>
+            <div>
+                <input type="radio" id="talvez" name="aceita-jesus" >
+                <label for="talvez">Talvez</label> 
+            </div>
+            <div>
+                <input type="radio" id="nao" name="aceita-jesus" >
+                <label for="naotenhoresposta">Não tenho uma resposta ainda</label>
+            </div>
+        </div>
+        
+
+        
+        <!-- select e option -->
+        <div>
+            <label for="igreja">Selecione sua igreja:</label>
+            <select name="igreja" id="igreja">
+                <option selected disabled >Selecione...</option>
+                <option value="paredepreta">Parede Preta</option>
+                <option value="assembleia">Assembléia</option>
+                <option value="adventista">Adventista</option>
+                <option value="catolica">Católica</option>
+                <option value="budista">Budista</option>
+            </select>
+        </div>
+
+        <button>Enviar</button>
+    </form>
+</body>
+</html>
